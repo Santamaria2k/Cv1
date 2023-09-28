@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poppins:wght@400;500;600;700;800&family=Sedgwick+Ave+Display&display=swap');
+*{
+    margin: 0;      
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;   /** para sacar las bolitas de los enlaces */
+    text-decoration: none;  /**para sacar las lineas de los enlaces */
+}
+body {
+    font-family:'Poppins',sans-serif;  /** fuente para todas las letras*/
+    background-color: #3a4b97;       /**color de fondo */
+}
+img {
+   max-width: 100%;  /** imagen responsibas*/
+}
+.container {  
+    max-width: 1200px;   /** tamaño de la pagina */
+    margin: 0 auto;      /** 0 arriba y abajo, auto izaquieda y derecha */
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;        
+   justify-content: space-between;    /**  dejar separacion entre ellos */ 
+    }
+.logo{
+    font-family: 'Sedgwick Ave Display', cursive;
+    padding:  50px;
+    color: #f7c363;
+    font-size: 55px;       /**tamaño del logo */
+    font-weight: 800;     
+    text-transform: uppercase;   /** para poner en mayuscula el logo*/
+}    
+.menu .navbar ul li {
+    position: relative;
+    float: left; /** para mandar a la izquierda los enlaces*/
+}
+.menu .navbar ul li a{
+    font-size: 18px; /** tamaño de las letras de los enlaces */
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {   /** cambia de color al pasar por el menu*/
+    color: #49bada;
+}  
+#menu {
+    display: none; /** para que no se vea el menu*/
+}
+.menu-icono {     
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header {
+   display: flex; 
+    align-items: center;
+    min-height: 50vh;
+    padding: 100px 0 0 0; 
+}
+.header-content {
+   /** display: flex; */
+    flex: 1; /** para que tome todo el ancho de los 1200*/
+}
+.header-txt {
+    flex-basis: 50%;        /** para que tome la mitad de los 1200 */
+}
+.header-txt span {
+    font-size: 45px;
+    font-weight: 600;
+    color: #ffffff;  /** color de SOY */
+}
+.header-txt h1 {
+    font-size: 50px;
+    color: #907af3;  /* definimos el color del texto en header */
+    line-height: 1;     /** inter lineado de 1 */
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 5px 5px 5px 5px;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 13px 35px;
+    background: linear-gradient(       /* degrade del boton informacion*/
+        90deg,
+        rgba(78,159,215,1) 0%,
+        rgba(74,42,193,1) 100%
+    );
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 10px; /* para que se redonden un poco las esquinas*/
+}
+.abount {
+    padding: 0 0 100px 0;
+    display: flex;
+    align-items: center;
+}
+.abount-img {
+    flex-basis: 40%;
+}
+.abount-img img {
+    width: 90%;
+    border-radius: 10px;
+    border: 5px solid #907af3;
+}
+.abount-txt {
+    flex-basis: 60%; 
+}
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #907af3;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #907af3;
+    margin-bottom: 20px;
+}
+.abount-txt p {
+    color: #b3b3b3;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+.butons a {
+    margin-right: 15px; 
+}
+.porfolio {
+    padding: 50px 0;
+    text-align: center;
+}
+.porfolio-content {
+    margin-top: 20px;
+}
+.porfolio-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.porfolio-txt {
+    flex-basis: 100%;
+    text-align: left;
+}
+.porfolio-txt span {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #49BADA;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.porfolio-txt h3 {
+    color: #907af3;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.porfolio-txt p{
+    font-size: 17px;
+    color: #dacbcb;
+    margin-bottom: 25;
+}
+
+.porfolio-img img {
+    width: 400px;
+}
+
+.skills {
+    padding: 0 0 20px 0;
+    text-align: center;
+}
+.skills-content {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    gap: 100px;
+    justify-content: center;
+}
+.skills-content img {
+    width: 100px;
+}
+.footer {        
+    
+    padding: 50px 0;
+    background: linear-gradient(      
+        90deg,
+        rgba(78,159,215,1) 0%,
+        rgba(74,42,193,1) 100%
+    );
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.link h3{
+    color: #050118;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.link a {
+    color: #ffffff;
+    font-size: 17px ;
+    display: block;
+    margin-bottom: 10px;
+}
+@media (max-width:991px) {
+       .menu  {
+            padding: 20px;
+       }
+       .menu label {
+            display: initial;
+       }
+       .menu .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #49BADA;
+            display: none;
+       }
+       .menu .navbar ul li a:hover {
+            color: #101630;
+        }
+       .menu .navbar ul li {
+              width: 100;
+       }
+        #menu:checked ~ .navbar {
+            display: initial;
+        }
+    .logo {
+        padding: 10px;
+        
+    }    
+    .header {
+        min-height: 0vh;
+        padding: 100px 30px 30px 30px;
+    }      
+    .header-content {
+        flex-direction: column;
+        text-align: center;     
+    }
+    .header-txt h1 {
+        font-size: 50px;
+    }
+    .abount{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .abount-img {
+        text-align: center;
+
+    }
+    .abount-img img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    .butons a {
+        margin: 0 0 10px 0;
+
+    }
+    .porfolio{
+        padding: 30px;
+    }
+    .porfolio-content {
+        margin-top: 30px;
+    }
+    .porfolio-1{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .porfolio-txt{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .porfolio-img{
+        order: 2;
+    }
+    .porfolio-img img {
+        width: 250px;
+    }
+    .skills {
+        padding: 0 30px 30px 30px;
+    }
+    .skills-content{
+        margin-top: 0;
+        grid-template-columns: repeat (2, 1fr);
+        gap: 40px;
+        padding: 0 10px;
+    }
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
